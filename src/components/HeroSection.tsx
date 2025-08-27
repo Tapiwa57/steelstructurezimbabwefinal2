@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Building2, Shield, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-construction.jpg";
 
 const HeroSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
@@ -37,14 +40,17 @@ const HeroSection = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button className="btn-hero text-lg px-8 py-4">
+                <Button
+                  className="btn-hero text-lg px-8 py-4"
+                  onClick={() => setIsModalOpen(true)}
+                >
                   Discover More
                 </Button>
-                  <a href="https://wa.me/263782899160">
-              <Button className="btn-hero">
-              Get A Quote
-            </Button>
-            </a>
+                <a href="https://wa.me/263782899160">
+                  <Button className="btn-hero">
+                    Get A Quote
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -91,6 +97,38 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-xl shadow-lg w-11/12 max-w-lg p-6 relative animate-fade-in">
+            {/* Close button */}
+            <button
+              className="absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+              onClick={() => setIsModalOpen(false)}
+            >
+              ✕
+            </button>
+
+            {/* Modal content */}
+            <h2 className="text-2xl font-bold mb-4 text-center">About Our Project</h2>
+            <p className="text-gray-700 mb-6 text-center">
+              Steel Structure Zimbabwe specializes in high-quality steel constructions,
+              including warehouses, residential and commercial buildings, and more.
+              Learn more about our expertise and past projects.
+            </p>
+
+            {/* Go to About page button */}
+            <div className="flex justify-center">
+              <a href="#about">
+                <Button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg">
+                  Go to About
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
