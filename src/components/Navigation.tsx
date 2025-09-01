@@ -20,7 +20,7 @@ const Navigation = () => {
           <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-1 sm:space-y-0 text-center sm:text-left text-[10px] sm:text-sm w-full sm:w-auto">
             <span className="truncate">3667 Mainway Meadow, Waterfall, Harare, Zimbabwe</span>
             <span>+263 782 899 160</span>
-            <span>info@steelstructure.co.zw</span>
+            <span>steelstructureszimbabwe@yahoo.com</span>
 
             {/* Socials */}
             <div className="flex justify-center sm:justify-start space-x-3 text-lg mt-1 sm:mt-0">
