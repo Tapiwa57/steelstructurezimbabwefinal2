@@ -4,9 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import Image1 from "../../public/images/image1.jpeg";
 import Image3 from "../../public/images/image3.jpeg";
 import Image2 from "../../public/images/image2.jpeg";
-import warehouseImage from "../assets/warehouse-project.jpg";
-import plantImage from "../assets/plant-construction.jpg";
-import heroImage from "../assets/hero-construction.jpg";
+import { Link } from "react-router-dom";
 const ProjectsSection = () => {
   const projects = [
     {
@@ -27,24 +25,7 @@ const ProjectsSection = () => {
       image: Image2,
       description: "Complex steel structure with precision engineering"
     },
-    {
-      title: "Warehouse Complex",
-      category: "Commercial", 
-      image: warehouseImage,
-      description: "Large-scale warehouse complex for logistics operations"
-    },
-    {
-      title: "Industrial Facility",
-      category: "Industrial",
-      image: plantImage, 
-      description: "State-of-the-art manufacturing facility"
-    },
-    {
-      title: "Steel Construction",
-      category: "Infrastructure",
-      image: heroImage,
-      description: "Major infrastructure project with advanced steel solutions"
-    }
+    
   ];
 
   const stats = [
@@ -117,9 +98,11 @@ const ProjectsSection = () => {
 
         {/* View More Projects Button */}
         <div className="text-center animate-fade-in">
+          <Link to="/Projects">
           <Button className="btn-primary text-lg px-8 py-4">
             View More Projects
           </Button>
+           </Link>
         </div>
       </div>
     </section>

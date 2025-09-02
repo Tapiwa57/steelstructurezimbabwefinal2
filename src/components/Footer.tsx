@@ -1,5 +1,4 @@
-import {MapPin, Phone, Mail } from "lucide-react";
-import Logo from "../../public/images/Logo.jpg"
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -18,7 +17,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Your trusted partner in high quality steel buildings. We deliver durability, 
+              Your trusted partner in high quality steel buildings. We deliver durability,
               affordability, and fast turn arounds across Zimbabwe.
             </p>
           </div>
@@ -27,18 +26,11 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-lg font-semibold">MENU</h3>
             <div className="space-y-3">
-              <a href="#home" className="block text-primary-foreground/80 hover:text-accent transition-colors link-animated">
-                Home
-              </a>
-              <a href="#about" className="block text-primary-foreground/80 hover:text-accent transition-colors link-animated">
-                About Us
-              </a>
-              <a href="#services" className="block text-primary-foreground/80 hover:text-accent transition-colors link-animated">
-                Services
-              </a>
-              <a href="#projects" className="block text-primary-foreground/80 hover:text-accent transition-colors link-animated">
-                Projects
-              </a>
+              <a href="/" className="block text-primary-foreground/80 hover:text-accent transition-colors link-animated">Home</a>
+              <a href="/discover" className="block text-primary-foreground/80 hover:text-accent transition-colors link-animated">About</a>
+              <a href="/services" className="block text-primary-foreground/80 hover:text-accent transition-colors link-animated">Services</a>
+              <a href="/projects" className="block text-primary-foreground/80 hover:text-accent transition-colors link-animated">Projects</a>
+              <a href="/contact" className="block text-primary-foreground/80 hover:text-accent transition-colors link-animated">Contact</a>
             </div>
           </div>
 
@@ -82,7 +74,7 @@ const Footer = () => {
         <div className="border-t border-primary-glow/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-primary-foreground/60 text-sm">
-              © 2025 - Steel Structures Zimbabwe. All rights reserved.
+              © {new Date().getFullYear()} - Steel Structures Zimbabwe. All rights reserved.
             </div>
             <div className="text-primary-foreground/60 text-sm">
               Designed by Tapiwa Ndemera

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
@@ -52,23 +53,14 @@ const Navigation = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex flex-wrap items-center space-x-4 lg:space-x-6 text-sm sm:text-base">
-            <a href="#home" className="hover:text-blue-600 font-medium">
-              Home
-            </a>
-            <a href="#about" className="hover:text-blue-600 font-medium">
-              About
-            </a>
-            <a href="#services" className="hover:text-blue-600 font-medium">
-              Services
-            </a>
-            <a href="#projects" className="hover:text-blue-600 font-medium">
-              Projects
-            </a>
-            <a href="#contacts" className="hover:text-blue-600 font-medium">
-              Contacts
-            </a>
+            <Link to="/" className="hover:text-blue-600 font-medium">Home</Link>
+            <Link to="/discover" className="hover:text-blue-600 font-medium">About</Link>
+            <Link to="/services" className="hover:text-blue-600 font-medium">Services</Link>
+            <Link to="/Projects" className="hover:text-blue-600 font-medium">Projects</Link>
+            <Link to="/contact" className="hover:text-blue-600 font-medium">Contact</Link>
+            
 
-            <a href="https://wa.me/263782899160">
+            <a href="https://wa.me/263782899160" target="_blank" rel="noreferrer">
               <Button className="bg-blue-700 hover:bg-blue-800 text-white px-3 sm:px-6 py-2 rounded-lg text-sm sm:text-base whitespace-nowrap">
                 GET A QUOTE
               </Button>
@@ -90,23 +82,13 @@ const Navigation = () => {
           {/* Mobile Menu */}
           {isOpen && (
             <div className="md:hidden w-full bg-white px-4 py-4 space-y-3 border-t border-gray-200 animate-slide-down">
-              <a href="#home" className="block hover:text-blue-600 font-medium">
-                Home
-              </a>
-              <a href="#about" className="block hover:text-blue-600 font-medium">
-                About
-              </a>
-              <a href="#services" className="block hover:text-blue-600 font-medium">
-                Services
-              </a>
-              <a href="#projects" className="block hover:text-blue-600 font-medium">
-                Projects
-              </a>
-              <a href="#contacts" className="block hover:text-blue-600 font-medium">
-                Contacts
-              </a>
+              <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-blue-600 font-medium">Home</Link>
+              <Link to="/discover" onClick={() => setIsOpen(false)} className="block hover:text-blue-600 font-medium">About</Link>
+              <Link to="/services" onClick={() => setIsOpen(false)} className="block hover:text-blue-600 font-medium">Services</Link>
+              <Link to="/projects" onClick={() => setIsOpen(false)} className="block hover:text-blue-600 font-medium">Projects</Link>
+              <Link to="/contact" onClick={() => setIsOpen(false)} className="block hover:text-blue-600 font-medium">Contact</Link>
 
-              <a href="https://wa.me/263782899160">
+              <a href="https://wa.me/263782899160" target="_blank" rel="noreferrer">
                 <Button className="bg-blue-700 hover:bg-blue-800 text-white w-full">
                   GET A QUOTE
                 </Button>
