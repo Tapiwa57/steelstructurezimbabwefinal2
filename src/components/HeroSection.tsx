@@ -1,15 +1,13 @@
-import { useState } from "react";
 import { Building2, Shield, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-construction.jpg";
+import heroImage from "@/assets/Rectangle 4.png";
+import { Link } from "react-router-dom"; // 👈 import Link
 
 const HeroSection = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
@@ -22,7 +20,9 @@ const HeroSection = () => {
           <div className="animate-fade-in">
             <div className="space-y-6">
               <div className="space-y-2">
-                <p className="text-accent font-semibold text-lg animate-slide-in">Professional Contractor</p>
+                <p className="text-accent font-semibold text-lg animate-slide-in">
+                  Professional Contractor
+                </p>
                 <h1 className="text-5xl lg:text-7xl font-bold text-primary-foreground leading-tight">
                   We Build <br />
                   <span className="bg-gradient-to-r from-accent to-accent-glow bg-clip-text text-transparent">
@@ -33,23 +33,24 @@ const HeroSection = () => {
                   Steel and Brick
                 </h2>
               </div>
-              
+
               <p className="text-xl text-primary-foreground/80 max-w-lg leading-relaxed">
-                Listen better. Plan better. Build better. We have successfully completed more than 
-                <span className="text-accent font-semibold"> 100+ projects</span> across Zimbabwe.
+                Listen better. Plan better. Build better. We have successfully
+                completed more than
+                <span className="text-accent font-semibold"> 100+ projects</span>{" "}
+                across Zimbabwe.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button
-                  className="btn-hero text-lg px-8 py-4"
-                  onClick={() => setIsModalOpen(true)}
-                >
-                  Discover More
-                </Button>
-                <a href="https://wa.me/263782899160">
-                  <Button className="btn-hero">
-                    Get A Quote
+                {/* Use React Router Link instead of <a> */}
+                <Link to="/discover">
+                  <Button className="btn-hero text-lg px-8 py-4">
+                    Discover More
                   </Button>
+                </Link>
+
+                <a href="https://wa.me/263782899160">
+                  <Button className="btn-hero">Get A Quote</Button>
                 </a>
               </div>
             </div>
@@ -64,8 +65,12 @@ const HeroSection = () => {
                     <Building2 className="h-6 w-6 text-accent-foreground" />
                   </div>
                   <div>
-                    <h3 className="text-primary-foreground font-semibold text-lg">Built up Steel</h3>
-                    <p className="text-primary-foreground/70">Providing durable steel structures for commercial use</p>
+                    <h3 className="text-primary-foreground font-semibold text-lg">
+                      Built up Steel
+                    </h3>
+                    <p className="text-primary-foreground/70">
+                      Providing durable steel structures for commercial use
+                    </p>
                   </div>
                 </div>
               </div>
@@ -76,8 +81,12 @@ const HeroSection = () => {
                     <Shield className="h-6 w-6 text-accent-foreground" />
                   </div>
                   <div>
-                    <h3 className="text-primary-foreground font-semibold text-lg">Quality Material</h3>
-                    <p className="text-primary-foreground/70">High-grade steel to ensure long-lasting strength</p>
+                    <h3 className="text-primary-foreground font-semibold text-lg">
+                      Quality Material
+                    </h3>
+                    <p className="text-primary-foreground/70">
+                      High-grade steel to ensure long-lasting strength
+                    </p>
                   </div>
                 </div>
               </div>
@@ -88,8 +97,12 @@ const HeroSection = () => {
                     <Users className="h-6 w-6 text-accent-foreground" />
                   </div>
                   <div>
-                    <h3 className="text-primary-foreground font-semibold text-lg">Professional Work</h3>
-                    <p className="text-primary-foreground/70">Expert solutions with precision, safety and reliability</p>
+                    <h3 className="text-primary-foreground font-semibold text-lg">
+                      Professional Work
+                    </h3>
+                    <p className="text-primary-foreground/70">
+                      Expert solutions with precision, safety and reliability
+                    </p>
                   </div>
                 </div>
               </div>
@@ -97,38 +110,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white rounded-xl shadow-lg w-11/12 max-w-lg p-6 relative animate-fade-in">
-            {/* Close button */}
-            <button
-              className="absolute top-3 right-3 text-gray-600 hover:text-gray-900"
-              onClick={() => setIsModalOpen(false)}
-            >
-              ✕
-            </button>
-
-            {/* Modal content */}
-            <h2 className="text-2xl font-bold mb-4 text-center">About Our Project</h2>
-            <p className="text-gray-700 mb-6 text-center">
-              Steel Structure Zimbabwe specializes in high-quality steel constructions,
-              including warehouses, residential and commercial buildings, and more.
-              Learn more about our expertise and past projects.
-            </p>
-
-            {/* Go to About page button */}
-            <div className="flex justify-center">
-              <a href="#about">
-                <Button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg">
-                  Go to About
-                </Button>
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };

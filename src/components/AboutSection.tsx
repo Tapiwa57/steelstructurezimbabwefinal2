@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Building } from "lucide-react";
 import plantImage from "@/assets/plant-construction.jpg";
+import { Link } from "react-router-dom"; // 👈 import Link
 
 const AboutSection = () => {
   return (
@@ -82,9 +83,12 @@ const AboutSection = () => {
               </Card>
             </div>
 
-            <Button className="btn-primary text-lg px-8 py-4">
-              Discover More
-            </Button>
+{/* Use React Router Link instead of <a> */}
+                <Link to="/discover">
+                  <Button className="btn-primary text-lg px-8 py-4 mt-10">
+                    Discover More
+                  </Button>
+                </Link>
           </div>
         </div>
       </div>
