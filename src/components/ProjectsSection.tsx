@@ -10,20 +10,20 @@ import heroImage from "../assets/hero-construction.jpg";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Warehouse Structure",
-      category: "Commercial",
+      title: "Vainona-Warehouse Structure",
+      category: "Industrial",
       image: Image1,
       description: "Modern steel warehouse facility with advanced structural design"
     },
     {
-      title: "Plant Structure", 
+      title: "Mt Pleasant-Steel Framework", 
       category: "Industrial",
       image: Image3,
       description: "Heavy-duty industrial plant with specialized steel framework"
     },
     {
-      title: "Steel Framework",
-      category: "Construction",
+      title: "Miekles Hotel",
+      category: "Commercial;",
       image: Image2,
       description: "Complex steel structure with precision engineering"
     },
