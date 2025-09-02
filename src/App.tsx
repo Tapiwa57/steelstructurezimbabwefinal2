@@ -13,7 +13,7 @@ import Home from "./pages/Index";
 import Discover from "./pages/discover";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
+import Projects from "./pages/Project";
 
 const queryClient = new QueryClient();
 
