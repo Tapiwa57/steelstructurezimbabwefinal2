@@ -18,7 +18,7 @@ const Navigation = () => {
 
           {/* Right */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-1 sm:space-y-0 text-center sm:text-left text-[10px] sm:text-sm w-full sm:w-auto">
-            <span className="truncate">3667 Mainway Meadow, Waterfall, Harare, Zimbabwe</span>
+            <span className="truncate">3667 Mainway Meadows, Waterfalls, Harare, Zimbabwe</span>
             <span>+263 782 899 160</span>
             <span>steelstructureszimbabwe@yahoo.com</span>
 

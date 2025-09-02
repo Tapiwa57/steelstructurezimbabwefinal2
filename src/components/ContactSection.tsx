@@ -67,7 +67,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">Address</h4>
-                      <p className="text-muted-foreground">3667 Mainway Meadow, Waterfalls<br />Harare, Zimbabwe</p>
+                      <p className="text-muted-foreground">3667 Mainway Meadows, Waterfalls<br />Harare, Zimbabwe</p>
                     </div>
                   </div>
                 </CardContent>
@@ -95,7 +95,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">Email</h4>
-                      <p className="text-muted-foreground">sales@steelstructureszim.co.zw</p>
+                      <p className="text-muted-foreground">steelstructureszimbabwe@yahoo.com</p>
                     </div>
                   </div>
                 </CardContent>
