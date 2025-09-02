@@ -27,10 +27,10 @@ const Navigation = () => {
               <a href="https://wa.me/263782899160" target="_blank" rel="noreferrer">
                 <FaWhatsapp />
               </a>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=61559313327774" target="_blank" rel="noreferrer">
                 <FaFacebookF />
               </a>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/stee.lstructurezimbabwe/" target="_blank" rel="noreferrer">
                 <FaInstagram />
               </a>
             </div>

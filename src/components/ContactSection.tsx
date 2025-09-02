@@ -106,15 +106,21 @@ const ContactSection = () => {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-foreground">Follow Us On Social Media</h4>
               <div className="flex space-x-4">
+                <a href="https://wa.me/263782899160">
                 <Button size="icon" className="bg-gradient-primary hover:scale-110 transition-transform">
                   <MessageSquare className="h-5 w-5" />
                 </Button>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61559313327774">
                 <Button size="icon" className="bg-gradient-primary hover:scale-110 transition-transform">
                   <Facebook className="h-5 w-5" />
                 </Button>
+                </a>
+                <a href="https://www.instagram.com/stee.lstructurezimbabwe/">
                 <Button size="icon" className="bg-gradient-primary hover:scale-110 transition-transform">
                   <Instagram className="h-5 w-5" />
                 </Button>
+                </a>
               </div>
             </div>
           </div>
