@@ -36,7 +36,7 @@ const ContactSection = () => {
       <div className="container px-4 mx-auto">
         {/* Contact Header */}
         <div className="text-center space-y-4 mb-16 animate-fade-in">
-          <p className="text-accent font-semibold text-lg">TOUCH US</p>
+          <p className="text-accent font-semibold text-lg">GET IN TOUCH </p>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
             Need a partner for your next construction project
           </h2>
