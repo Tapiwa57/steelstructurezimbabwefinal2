@@ -77,7 +77,9 @@ const Footer = () => {
               © {new Date().getFullYear()} - Steel Structures Zimbabwe. All rights reserved.
             </div>
             <div className="text-primary-foreground/60 text-sm">
+            <a href="https://wa.me/263715039928" target="_blank" rel="noreferrer">
               Designed by Tapiwa Ndemera
+            </a>
             </div>
           </div>
         </div>
