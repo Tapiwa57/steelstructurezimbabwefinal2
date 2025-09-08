@@ -1,30 +1,30 @@
 // src/pages/Projects.tsx
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import project1 from "../assets/warehouse-project.jpg";
-import project2 from "../assets/plant-construction.jpg";
-import project3 from "../assets/hero-construction.jpg";
+import Image1 from "../../public/images/image1.jpeg";
+import Image3 from "../../public/images/image3.jpeg";
+import Image2 from "../../public/images/image2.jpeg";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Warehouse Project",
+      title: "Vainona-Warehouse Structure",
       description: "Modern steel warehouse built for durability and efficiency.",
-      image: project1,
+      image: Image1,
     },
     {
       id: 2,
-      title: "Industrial Factory",
+      title: "Mt Pleasant-Steel Framework",
       description: "High-capacity factory with steel structure and roofing solutions.",
-      image: project2,
+      image: Image3,
     },
     {
       id: 3,
-      title: "Residential Building",
+      title: "Miekles Hotel",
       description: "Affordable and stylish steel residential structures.",
-      image: project3,
+      image: Image2,
     },
     // Add more projects here
   ];

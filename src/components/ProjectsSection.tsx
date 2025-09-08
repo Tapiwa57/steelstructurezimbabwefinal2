@@ -71,9 +71,11 @@ const ProjectsSection = () => {
                   <p className="text-muted-foreground">
                     {project.description}
                   </p>
-                  <Button variant="ghost" className="p-0 h-auto font-semibold link-animated text-primary">
-                    View Details →
+                  <Link to="/contact">
+                  <Button className="bg-blue-700 hover:bg-blue-800 text-white w-full">
+                    Get a Quote
                   </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
