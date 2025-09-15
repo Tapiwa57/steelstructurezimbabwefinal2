@@ -49,7 +49,7 @@ const HeroSection = () => {
                   </Button>
                 </Link>
 
-                <a href="https://wa.me/263782899160">
+                <a href="https://wa.me/263788648753">
                   <Button className="btn-hero">Get A Quote</Button>
                 </a>
               </div>

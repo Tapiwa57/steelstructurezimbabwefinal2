@@ -20,12 +20,12 @@ const Navigation = () => {
           {/* Right */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-1 sm:space-y-0 text-center sm:text-left text-[10px] sm:text-sm w-full sm:w-auto">
             <span className="truncate">3667 Mainway Meadows, Waterfalls, Harare, Zimbabwe</span>
-            <span>+263 782 899 160</span>
+            <span>Call:+263 782 899 160</span>
             <span>steelstructureszimbabwe@yahoo.com</span>
 
             {/* Socials */}
             <div className="flex justify-center sm:justify-start space-x-3 text-lg mt-1 sm:mt-0">
-              <a href="https://wa.me/263782899160" target="_blank" rel="noreferrer">
+              <a href="https://wa.me/263788648753" target="_blank" rel="noreferrer">
                 <FaWhatsapp />
               </a>
               <a href="https://www.facebook.com/profile.php?id=61559313327774" target="_blank" rel="noreferrer">
@@ -60,7 +60,7 @@ const Navigation = () => {
             <Link to="/contact" className="hover:text-blue-600 font-medium">Contact</Link>
             
 
-            <a href="https://wa.me/263782899160" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/263788648753" target="_blank" rel="noreferrer">
               <Button className="bg-blue-700 hover:bg-blue-800 text-white px-3 sm:px-6 py-2 rounded-lg text-sm sm:text-base whitespace-nowrap">
                 GET A QUOTE
               </Button>
@@ -88,7 +88,7 @@ const Navigation = () => {
               <Link to="/projects" onClick={() => setIsOpen(false)} className="block hover:text-blue-600 font-medium">Projects</Link>
               <Link to="/contact" onClick={() => setIsOpen(false)} className="block hover:text-blue-600 font-medium">Contact</Link>
 
-              <a href="https://wa.me/263782899160" target="_blank" rel="noreferrer">
+              <a href="https://wa.me/263788648753" target="_blank" rel="noreferrer">
                 <Button className="bg-blue-700 hover:bg-blue-800 text-white w-full">
                   GET A QUOTE
                 </Button>

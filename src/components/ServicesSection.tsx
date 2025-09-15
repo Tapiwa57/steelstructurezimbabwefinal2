@@ -93,7 +93,7 @@ const ServicesSection = () => {
             <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
               Let's work together to bring your vision to life with our expertise in steel construction and engineering.
             </p>
-            <a href="https://wa.me/263782899160">
+            <a href="https://wa.me/263788648753">
               <Button className="btn-hero text-lg px-8 py-4">
               Get in Touch
             </Button>

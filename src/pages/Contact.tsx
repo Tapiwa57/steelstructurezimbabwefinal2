@@ -81,7 +81,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">Phone</h4>
-                      <p className="text-sm sm:text-base text-muted-foreground">+263 782 899 160</p>
+                      <p className="text-sm sm:text-base text-muted-foreground">Call: +263 782 899 160</p>
                     </div>
                   </div>
                 </CardContent>
@@ -106,7 +106,7 @@ const Contact = () => {
             <div className="space-y-2">
               <h4 className="text-lg font-semibold text-foreground">Follow Us</h4>
               <div className="flex space-x-3 flex-wrap">
-                <a href="https://wa.me/263782899160">
+                <a href="https://wa.me/263788648753">
                   <Button size="icon" className="bg-gradient-primary hover:scale-110 transition-transform">
                     <MessageSquare className="h-5 w-5 sm:h-6 sm:w-6" />
                   </Button>

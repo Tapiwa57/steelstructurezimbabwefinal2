@@ -8,10 +8,8 @@ import Image2 from "../../public/images/image2.jpeg";
 import Image3 from "../../public/images/image3.jpeg";
 import Image4 from "../../public/images/WhatsApp Image 2025-08-25 at 15.01.14_3a1aa3b6.jpg";
 import Image5 from "../../public/images/WhatsApp Image 2025-08-25 at 15.20.33_a2549fef.jpg";
-import Image6 from "../../src/assets/WhatsApp Image 2025-08-25 at 15.01.10_cee323d3.jpg";
-import Image7 from "../../src/assets/WhatsApp Image 2025-08-25 at 15.01.11_71a6df9a.jpg";
 import Image8 from "../../src/assets/WhatsApp Image 2025-08-25 at 15.01.12_033073f7.jpg";
-import Image9 from "../../src/assets/WhatsApp Image 2025-08-25 at 15.01.12_7aab1ad2.jpg";
+
 import { Link } from "react-router-dom";
 
 // Modal Component

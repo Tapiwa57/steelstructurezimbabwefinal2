@@ -44,7 +44,7 @@ const DiscoverPage = () => {
               </h2>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                <a href="https://wa.me/263782899160">
+                <a href="https://wa.me/263788648753">
                   <Button className="btn-hero bg-accent hover:bg-accent/80 text-white px-6 py-3">
                     Get A Quote
                   </Button>
