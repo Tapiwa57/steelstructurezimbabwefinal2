@@ -14,7 +14,7 @@ const Navigation = () => {
         <div className="container mx-auto flex flex-wrap sm:flex-nowrap justify-between items-center px-4 py-2 gap-2">
           {/* Left */}
           <span className="bg-red-600 px-3 py-1 font-semibold rounded-r-lg text-center sm:text-left w-full sm:w-auto">
-            Welcome to Steel Structure
+            Welcome to Steel Structures Zimbabwe
           </span>
 
           {/* Right */}
