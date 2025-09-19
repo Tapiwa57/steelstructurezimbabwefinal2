@@ -17,7 +17,7 @@ const AboutSection = () => {
                 alt="Steel construction work"
                 className="rounded-2xl shadow-construction w-full"
               />
-              <div className="absolute -bottom-8 -right-8 bg-gradient-accent p-6 rounded-2xl text-accent-foreground shadow-accent">
+              <div className="absolute -bottom-8 -right-6 bg-gradient-accent p-6 rounded-2xl text-accent-foreground shadow-accent">
                 <div className="text-center">
                   <Building className="h-8 w-8 mx-auto mb-2" />
                   <p className="font-semibold">Innovative Work</p>
